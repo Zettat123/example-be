@@ -5,6 +5,10 @@ from foo import app
 from foo.user.userctrl import UserCtrl
 
 
+@app.route('/', methods=['GET'])
+def handle_default():
+    return 'Online'
+
 @app.route('/users', methods=['POST'])
 def handle_user():
     data = json.loads(request.get_data().decode('utf-8'))
