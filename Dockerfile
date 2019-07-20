@@ -28,7 +28,6 @@ COPY . /app
 RUN pip3 install -r requirements.txt
 
 #run
-EXPOSE 3306
 EXPOSE 5000
 RUN chmod a+x start.sh
 CMD [ "./start.sh" ]
