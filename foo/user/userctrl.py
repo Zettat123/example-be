@@ -29,7 +29,7 @@ class UserCtrl:
             result_users = User.query.filter(User.user_iq >= target_iq).all()
             result_users_names = []
             for u in result_users:
-                result_users_names.append(u.user_name)
+                result_users_names.append({'user_name':u.user_name, 'user_iq':u.user_iq})
             return {
                 'code': 0,
                 'msg': 'success',
