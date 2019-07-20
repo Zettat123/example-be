@@ -5,8 +5,8 @@
 ### Docker
 
 ```
-docker build -t example-fe-image .
-docker run -p 0.0.0.0:3002:5000 --name example-fe-container -t example-fe-image
+docker build -t example-be-image .
+docker run -p 0.0.0.0:3002:5000 --name example-be-container -t example-be-image
 ```
 
 Server address:
